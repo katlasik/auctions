@@ -15,6 +15,11 @@ public class HomeController {
         this.securityService = securityService;
     }
 
+    @GetMapping("/registration")
+    public String getRegistration() {
+        return "registration";
+    }
+
     @GetMapping("/")
     public String getWelcome() {
         return "welcome";
